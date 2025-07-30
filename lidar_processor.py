@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-LiDAR Data Processor for AI Mapping Agent
+LiDAR Data Processor for Mapping Automation Agent
 Processes and visualizes USGS LiDAR .laz files for drone mapping applications
 """
 
@@ -135,7 +135,7 @@ class LiDARProcessor:
         avg_points_m = np.mean([data['num_points'] for data in self.processed_data.values()]) / 1e6
 
         ax1.set_title(
-            f"Points (pts) per File\nFiles: {total_files:,.0f}, pts: {total_points_m:,.1f}B, Ø pts: {avg_points_m:,.1f}M per file",
+            f"Points (pts) per File\nFiles: {total_files:,.0f}, ∑ pts: {total_points_m:,.1f}B, Ø pts: {avg_points_m:,.1f}M per file",
             fontsize=12, fontweight='bold'
         );
         
@@ -240,7 +240,7 @@ class LiDARProcessor:
             ax5.set_xticks(x_positions)
             ax5.set_xticklabels(unique_classes)
 
-            ax5.set_title(f'Point Classifications\n1 - Unclassified, 2 - Ground, 7 - Low Point, 18 - High Noise', # depends on the dataset
+            ax5.set_title(f'Point Classifications\n1 - Unclassified, 2 - Ground, 7 - Low Point, 18 - High Noise',
                           fontsize=12, fontweight='bold')
             ax5.set_xlabel('Classification Code')
             ax5.set_ylabel('Count')
