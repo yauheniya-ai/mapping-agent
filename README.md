@@ -15,13 +15,13 @@ A Python-based LiDAR data processing tool for automated terrain mapping and anal
 
 ```
 ├── download_open_topography.py  # Download LiDAR data from OpenTopography
-├── lidar_processor.py          # Main processing and analysis script
-├── view_dem_3d.py             # 3D DEM visualization tool
-├── requirements.txt           # Python dependencies
-├── LICENSE                    # MIT License
-├── README.md                  # This file
-├── TX23_Nelson/              # Raw LiDAR data directory
-├── output_files/             # Generated outputs
+├── lidar_processor.py           # Main processing and analysis script
+├── view_dem_3d.py               # 3D DEM visualization tool
+├── requirements.txt             # Python dependencies
+├── LICENSE                      # MIT License
+├── README.md                    # This file
+├── TX23_Nelson/                 # Raw LiDAR data directory
+├── output_files/                # Generated outputs
 │   ├── TX23_Nelson_lidar_analysis.png
 │   ├── TX23_Nelson_processed_data.npy
 │   └── TX23_Nelson_terrain_map.tif
