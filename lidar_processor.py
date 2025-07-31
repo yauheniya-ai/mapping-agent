@@ -57,10 +57,8 @@ class LiDARProcessor:
         """Analyze a single .laz file and extract key information"""
             
         try:
-            # Read LAS/LAZ file
             las = laspy.read(filepath)
             
-            # Extract basic information
             info = {
                 'filename': filepath.name,
                 'num_points': len(las.points),
